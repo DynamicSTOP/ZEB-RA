@@ -1,0 +1,65 @@
+body {
+    background-color: grey;
+    text-align: center;
+    margin: 0;
+    height: 100%;
+}
+
+body > div {
+    background-color: #006666;
+    width: 1086px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+div.header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.96);
+    height: 86px;
+    text-align: left;
+    position: relative;
+}
+
+div.header > div {
+    font-size: 28px;
+    line-height: 86px;
+    top: 50%;
+    position: relative;
+    display: inline-block;
+    margin-top: -14px;
+}
+
+div.header div.logo {
+    left: 140px;
+    line-height: 28px;
+}
+
+div.header div.menu {
+    right: 120px;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    vertical-align: middle;
+}
+
+div.menu > div {
+    float: left;
+    height: 86px;
+    margin-right: 2px;
+    padding: 0 15px 0 15px;
+}
+
+div.submenu {
+    display: none;
+    position: absolute;
+    background-color: red;
+    left: 0px;
+}
+
+div.menu > div:hover div.submenu {
+    display: block;
+}
+
+div.menu > div:hover {
+    background-color: red;
+}
