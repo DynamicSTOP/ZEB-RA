@@ -27,8 +27,6 @@ div.header > div {
     line-height: 86px;
     top: 50%;
     position: relative;
-    display: inline-block;
-    margin-top: -14px;
 }
 
 div.header div.logo {
@@ -36,6 +34,7 @@ div.header div.logo {
     line-height: 28px;
     color:#06b5a9;
     font-weight: 800;
+    margin-top: -14px;
 }
 
 div.logo span{
