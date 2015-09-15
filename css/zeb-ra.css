@@ -55,13 +55,14 @@ div.menu > div {
     height: 86px;
     margin-right: 2px;
     padding: 0 15px 0 15px;
+    font-size: 20px;
 }
 
 div.submenu {
     display: none;
     position: absolute;
     background-color: red;
-    left: 0px;
+    margin-left:-15px;
 }
 
 div.menu > div:hover div.submenu {
@@ -70,6 +71,24 @@ div.menu > div:hover div.submenu {
 
 div.menu > div:hover {
     background-color: red;
+    color:white;
+}
+
+div.submenu > div{
+    float:left;
+    min-width: 120px;
+    border-left: 1px rgba(160,160,160,0.9) solid;
+    line-height: normal;
+}
+
+div.submenu > div:first-child{
+    border-left: 0;
+}
+
+div.submenu div div {
+    padding: 5px;
+    font-size: 18px;
+    margin: 0;
 }
 
 div.zebra {
