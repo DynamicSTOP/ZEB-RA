@@ -149,3 +149,11 @@ div.zebra::after {
 .menu div .drop{
     margin-left: 15px;
 }
+
+.cost {
+    display: inline-block;
+    line-height: 82px;
+    position: relative;
+    top: 0;
+    vertical-align: top;
+}
