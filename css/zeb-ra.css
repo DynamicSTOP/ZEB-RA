@@ -7,7 +7,7 @@ body {
 
 body > div {
     text-align: center;
-    position:relative;
+    position: relative;
     background-color: white;
     margin: 0 auto;
     width: 1280px;
@@ -16,11 +16,11 @@ body > div {
 .header {
     width: 100%;
     background: rgba(255, 255, 255, 0.96);
-    color:#6b6b6b;
+    color: #6b6b6b;
     height: 86px;
     text-align: left;
     position: absolute;
-    top:0px;
+    top: 0px;
 }
 
 .header > div {
@@ -33,15 +33,14 @@ body > div {
 .header > .logo {
     left: 140px;
     line-height: 28px;
-    color:#06b5a9;
+    color: #06b5a9;
     font-weight: 800;
     margin-top: -14px;
 }
 
-.logo span{
-    color:#626262;
+.logo span {
+    color: #626262;
 }
-
 
 div.header div.menu {
     right: 130px;
@@ -59,7 +58,7 @@ div.menu > div {
     font-size: 18px;
 }
 
-div.menu > div:last-child{
+div.menu > div:last-child {
     margin-left: 95px;
 }
 
@@ -67,7 +66,7 @@ div.submenu {
     display: none;
     position: absolute;
     background-color: #cf1a2b;
-    margin-left:-18px;
+    margin-left: -18px;
 }
 
 div.menu > div:hover div.submenu {
@@ -76,32 +75,41 @@ div.menu > div:hover div.submenu {
 
 div.menu > div:hover {
     background-color: #cf1a2b;
-    color:white;
+    color: #f1bfc3;
     border-bottom: solid 1px #d84755;
     height: 85px;
 }
 
-div.submenu > div{
+div.submenu > div {
     white-space: nowrap;
     display: table-cell;
     min-width: 120px;
-    border-left: 1px rgba(160,160,160,0.9) solid;
+    border-left: 1px rgba(160, 160, 160, 0.9) solid;
     line-height: normal;
     vertical-align: top;
 }
 
-div.submenu > div:first-child{
+div.submenu > div:first-child {
     border-left: 0;
 }
 
-div.submenu > div:first-child > div:last-child{
-    vertical-align: middle;
+div.submenu > div:first-child > div:last-child {
     text-align: center;
-
+    position: relative;
+    top: 50%;
+    margin-top: 50px;
+    padding: 0;
 }
 
 div.submenu div div {
-    margin: 17px 37px 17px 37px;
+    padding: 25px 37px 0 37px;
+    cursor: pointer;
+}
+div.submenu div div:last-child {
+    padding-bottom: 20px;
+}
+div.submenu div div:first-child {
+    padding-top: 20px;
 }
 
 div.zebra {
@@ -111,22 +119,24 @@ div.zebra {
     background: url("../img/zebra.png") rgba(6, 181, 169, 0.3);
 }
 
-div.zebra::after{
+div.zebra::after {
     background: rgba(6, 181, 169, 0.3);
     content: "";
     display: block;
     height: 100%;
-    width:100%;
+    width: 100%;
 }
 
-.submenu .logo{
+.submenu .logo {
     line-height: 34px;
-    color:#fff;
+    color: #fec8cd;
     font-weight: 800;
     font-size: 34px;
-    margin-top:10px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px rgba(160, 160, 160, 0.9) solid;
 }
 
-.submenu .logo span{
-    color: #fec8cd;
+.submenu .logo span {
+    color: #fff;
 }
