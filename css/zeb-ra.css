@@ -13,23 +13,24 @@ body > div {
     width: 1280px;
 }
 
-div.header {
+.header {
     width: 100%;
     background: rgba(255, 255, 255, 0.96);
+    color:#6b6b6b;
     height: 86px;
     text-align: left;
     position: absolute;
     top:0px;
 }
 
-div.header > div {
+.header > div {
     font-size: 28px;
     line-height: 86px;
     top: 50%;
     position: relative;
 }
 
-div.header div.logo {
+.header > .logo {
     left: 140px;
     line-height: 28px;
     color:#06b5a9;
@@ -37,13 +38,13 @@ div.header div.logo {
     margin-top: -14px;
 }
 
-div.logo span{
+.logo span{
     color:#626262;
 }
 
 
 div.header div.menu {
-    right: 120px;
+    right: 130px;
     position: absolute;
     margin: 0;
     top: 0;
@@ -54,31 +55,37 @@ div.menu > div {
     float: left;
     height: 86px;
     margin-right: 2px;
-    padding: 0 15px 0 15px;
-    font-size: 20px;
+    padding: 0 18px 0 18px;
+    font-size: 18px;
+}
+
+div.menu > div:last-child{
+    margin-left: 95px;
 }
 
 div.submenu {
     display: none;
     position: absolute;
-    background-color: red;
-    margin-left:-15px;
+    background-color: #cf1a2b;
+    margin-left:-18px;
 }
 
 div.menu > div:hover div.submenu {
-    display: block;
+    display: table-row;
 }
 
 div.menu > div:hover {
-    background-color: red;
+    background-color: #cf1a2b;
     color:white;
 }
 
 div.submenu > div{
-    float:left;
+    white-space: nowrap;
+    display: table-cell;
     min-width: 120px;
     border-left: 1px rgba(160,160,160,0.9) solid;
     line-height: normal;
+    vertical-align: top;
 }
 
 div.submenu > div:first-child{
@@ -86,9 +93,7 @@ div.submenu > div:first-child{
 }
 
 div.submenu div div {
-    padding: 5px;
-    font-size: 18px;
-    margin: 0;
+    margin: 17px 37px 17px 37px;
 }
 
 div.zebra {
@@ -104,4 +109,16 @@ div.zebra::after{
     display: block;
     height: 100%;
     width:100%;
+}
+
+.submenu .logo{
+    line-height: 34px;
+    color:#fff;
+    font-weight: 800;
+    font-size: 34px;
+    margin-top:10px;
+}
+
+.submenu .logo span{
+    color: #fec8cd;
 }
