@@ -77,6 +77,8 @@ div.menu > div:hover div.submenu {
 div.menu > div:hover {
     background-color: #cf1a2b;
     color:white;
+    border-bottom: solid 1px #d84755;
+    height: 85px;
 }
 
 div.submenu > div{
@@ -90,6 +92,12 @@ div.submenu > div{
 
 div.submenu > div:first-child{
     border-left: 0;
+}
+
+div.submenu > div:first-child > div:last-child{
+    vertical-align: middle;
+    text-align: center;
+
 }
 
 div.submenu div div {
