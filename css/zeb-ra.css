@@ -142,18 +142,10 @@ div.zebra::after {
 .submenu .logo span {
     color: #fff;
 }
-
-.menu div .cart{
-    margin-right: 10px;
-}
 .menu div .drop{
     margin-left: 15px;
 }
-
-.cost {
-    display: inline-block;
-    line-height: 82px;
-    position: relative;
-    top: 0;
-    vertical-align: top;
+.cart{
+    margin-right: 10px;
+    margin-bottom: -3px;
 }
