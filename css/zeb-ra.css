@@ -20,7 +20,7 @@ body > div {
     height: 86px;
     text-align: left;
     position: absolute;
-    top: 0px;
+    top: 0;
 }
 
 .header > div {
@@ -55,7 +55,7 @@ div.menu > div {
     height: 86px;
     margin-right: 2px;
     padding: 0 18px 0 18px;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 div.menu > div:last-child {
@@ -105,9 +105,11 @@ div.submenu div div {
     padding: 25px 37px 0 37px;
     cursor: pointer;
 }
+
 div.submenu div div:last-child {
     padding-bottom: 20px;
 }
+
 div.submenu div div:first-child {
     padding-top: 20px;
 }
@@ -139,4 +141,11 @@ div.zebra::after {
 
 .submenu .logo span {
     color: #fff;
+}
+
+.menu div .cart{
+    margin-right: 10px;
+}
+.menu div .drop{
+    margin-left: 15px;
 }
