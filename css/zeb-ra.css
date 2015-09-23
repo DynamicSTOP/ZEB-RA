@@ -260,15 +260,26 @@ div.zebra::before {
 .cell4 {
     background-color: #f2ca66;
 }
+.cell1 .price{
+    color:#12867f;
+}
+
+.cell2 .price{
+    color:#5e4c38;
+}
+
+.cell3 .price{
+    color:#414049;
+}
 
 .cell1, .cell2, .cell3, .cell4 {
     position: relative;
     vertical-align: top;
-    padding-top: 10px;
     color: white;
     text-align: left;
     text-transform: uppercase;
     font-weight: 800;
+    cursor: pointer;
 }
 
 .cell1 .activ {
@@ -281,6 +292,7 @@ div.zebra::before {
 .cell1 .title, .cell2 .title, .cell3 .title {
     font-size: 25px;
     padding-left: 23px;
+    margin-top:10px;
 }
 
 .cell1 .sub, .cell3 .sub {
@@ -309,3 +321,31 @@ div.zebra::before {
     margin-bottom: -4px;
 }
 
+.cell4 .title{
+    text-align:center;
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: 800;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.cell4 .sub{
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cell4 .lg{
+    background-color: #ffffff;
+    color:#f2ca66;
+    text-transform: uppercase;
+    position:absolute;
+    left: 0;
+    bottom: 14px;
+    padding:11px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 800;
+}
