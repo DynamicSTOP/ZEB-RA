@@ -152,7 +152,7 @@ div.submenu div div:first-child {
     left: 0;
 }
 
-div.zebra {
+.zebra {
     width: 100%;
     height: 650px;
     margin: 0 auto;
@@ -160,7 +160,7 @@ div.zebra {
     position: relative;
 }
 
-div.zebra::before {
+.zebra::before {
     background: rgba(6, 181, 169, 0.3);
     content: "";
     display: block;
@@ -479,4 +479,52 @@ div.zebra::before {
 .bub7 img{
     margin-left: -47px;
     margin-top: -44px;
+}
+/* levis */
+
+.levis {
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.levis .Trademark{
+    position: absolute;
+    left:150px;
+    top:-15px;
+}
+.levis .corner{
+    position: absolute;
+    top:0;
+    left:-15px;
+    right:-15px;
+    border-bottom: solid 15px #6c000a;
+    border-left: solid 15px transparent;
+    border-right: solid 15px transparent;
+}
+
+.levis .bg{
+    position: relative;
+    top:0;
+    left: 0;
+    width:350px;
+    height: 151px;
+    background-image: url("../img/lTrademarkBg.png");
+    background-repeat: no-repeat;
+
+    color:white;
+    padding-top:30px;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.levis .registred{
+    position: absolute;
+    bottom:0;
+    right:50px;
+    font-size: 30px;
+    color: #a50716;
+    font-weight: 800;
 }
