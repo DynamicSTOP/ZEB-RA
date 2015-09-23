@@ -226,6 +226,7 @@ div.zebra::before {
     text-align: right;
 }
 
+/* promos */
 .cells {
     padding-top: 40px;
     padding-bottom: 50px;
@@ -260,16 +261,17 @@ div.zebra::before {
 .cell4 {
     background-color: #f2ca66;
 }
-.cell1 .price{
-    color:#12867f;
+
+.cell1 .price {
+    color: #12867f;
 }
 
-.cell2 .price{
-    color:#5e4c38;
+.cell2 .price {
+    color: #5e4c38;
 }
 
-.cell3 .price{
-    color:#414049;
+.cell3 .price {
+    color: #414049;
 }
 
 .cell1, .cell2, .cell3, .cell4 {
@@ -292,7 +294,7 @@ div.zebra::before {
 .cell1 .title, .cell2 .title, .cell3 .title {
     font-size: 25px;
     padding-left: 23px;
-    margin-top:10px;
+    margin-top: 10px;
 }
 
 .cell1 .sub, .cell3 .sub {
@@ -321,15 +323,15 @@ div.zebra::before {
     margin-bottom: -4px;
 }
 
-.cell4 .title{
-    text-align:center;
+.cell4 .title {
+    text-align: center;
     font-size: 100px;
     line-height: 100px;
     font-weight: 800;
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-.cell4 .sub{
+.cell4 .sub {
     font-size: 48px;
     line-height: 48px;
     font-weight: 800;
@@ -337,15 +339,144 @@ div.zebra::before {
     text-transform: uppercase;
 }
 
-.cell4 .lg{
+.cell4 .lg {
     background-color: #ffffff;
-    color:#f2ca66;
+    color: #f2ca66;
     text-transform: uppercase;
-    position:absolute;
+    position: absolute;
     left: 0;
     bottom: 14px;
-    padding:11px;
+    padding: 11px;
     font-size: 20px;
     line-height: 20px;
     font-weight: 800;
+}
+
+/*categories*/
+.categories {
+    width: 100%;
+    height: 560px;
+    margin: 0 auto;
+    background-color: rgba(64, 6, 181, 0.36);
+    background-image: url("../img/categories_bg.png");
+    position: relative;
+    background-position: 0 -43px;
+}
+
+.categories::before {
+    background: rgba(64, 6, 181, 0.36);
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    vertical-align: top;
+}
+
+.categories .bigText{
+    position:absolute;
+    top:66px;
+    font-size:80px;
+    line-height: 80px;
+    text-transform: uppercase;
+    color:white;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+}
+
+.bubbles {
+    position: absolute;
+    width: 100%;
+    top:215px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    vertical-align: top;
+}
+
+.bubbles > div{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: rgba(88,219,211,0.5);
+    vertical-align: top;
+    position: relative;
+}
+
+.bubbles .left{
+    margin-left: -100px;
+    margin-top: 15px;
+}
+
+.bub1{
+    margin-left:-35px;
+}
+
+.bub2{
+    margin-left: -57px;
+    margin-top: 56px;
+}
+
+.bub3{
+    margin-left: -34px;
+    margin-top: 13px;
+}
+
+.bub4{
+    margin-left: -37px;
+    margin-top: 42px;
+}
+
+.bub5{
+    margin-left: -28px;
+    margin-top: 75px;
+}
+
+.bub6{
+    margin-left: -51px;
+    margin-top: 16px;
+}
+
+.bub7{
+    margin-left: -55px;
+    margin-top: 102px;
+}
+
+.bubbles .right{
+    margin-top: 0;
+    margin-left: -67px;
+}
+
+.bubbles .bub2, .bubbles .bub4, .bubbles .bub6{
+    background: rgba(88,219,211,0.8);
+}
+
+.bubbles div img{
+    position: absolute;
+    top:50%;
+    left:50%;
+}
+.bub1 img, .bub5 img{
+    margin-left: -52px;
+    margin-top: -36px;
+}
+.bub2 img, .bub6 img{
+    margin-left: -57px;
+    margin-top: -55px;
+}
+.bub3 img{
+    margin-left: -30px;
+    margin-top: -60px;
+}
+.bub4 img{
+    margin-left: -51px;
+    margin-top: -40px;
+}
+.bub7 img{
+    margin-left: -47px;
+    margin-top: -44px;
 }
