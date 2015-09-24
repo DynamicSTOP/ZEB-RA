@@ -23,14 +23,14 @@
             $('.spinning').slick({
                 slidesToShow: 5,
                 dots:false,
-                focusOnSelect: false
+                focusOnSelect: false,
+                init:function(){$('.spinning .item:first-child').click();}
             });
             $('.spinning .item').click(function(){
                 $(".levis .itemInfo .price span").html("$ "+prices[$(this).data("slick-index")].toFixed(2));
                 $(".spinning .item.selected").removeClass("selected");
                 $(this).addClass("selected");
             });
-            $('.spinning .item:first-child').click();
         });
     </script>
 </head>
