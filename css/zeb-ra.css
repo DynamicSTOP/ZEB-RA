@@ -625,11 +625,11 @@ div.submenu div div:first-child {
     display: flex;
     -webkit-justify-content: space-between;
     justify-content: space-between;
-    padding: 50px 190px 50px 190px;
+    padding: 50px 100px 50px 100px;
 }
 
 .levis .spinning .item{
-    padding: 5px;
+    padding:10px;
     border-radius: 3px;
     border: 3px solid #58dbd3;
     display: inline-block;
