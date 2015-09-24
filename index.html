@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
     <script type="text/javascript">
-        var prices=[5.03,10.30,15.20,20.0,25.30,27.50,43.50];
+        var prices = [5.03, 10.30, 15.20, 20.0, 25.30, 27.50, 43.50];
 
         $(document).ready(function () {
             $('.zebra .slider').slick({
@@ -17,21 +17,28 @@
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 2000,
-                nextArrow:$(".sliderRight"),
-                prevArrow:$(".sliderLeft")
+                nextArrow: $(".sliderRight"),
+                prevArrow: $(".sliderLeft")
             });
 
             $('.spinning').slick({
                 slidesToShow: 5,
-                dots:false,
-                arrows:false,
+                dots: false,
+                arrows: false,
                 focusOnSelect: false
             });
 
-            $('.spinning .item').click(function(){
-                $(".levis .itemInfo .price span").html("$ "+prices[$(this).data("index")].toFixed(2));
+            $('.spinning .item').click(function () {
                 $(".spinning .item.selected").removeClass("selected");
                 $(this).addClass("selected");
+                $(".levis .fade").fadeOut();
+                $(".levis .itemInfo .price span").fadeOut({
+                    complete: function () {
+                        $(".levis .itemInfo .price span").html("$ " + prices[$(".levis .selected").data("index")].toFixed(2)).fadeIn();
+                    }
+                });
+                $(".levis .fade").fadeIn();
+
             });
 
             $('.spinning .item:first-child').click();
@@ -152,8 +159,9 @@
             </div>
             <div class="selectedItem">
                 <div class="itemInfo">
-                    <div class="title">Mens Levis Jeans-071</div>
-                    <div class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    <div class="title fade">Mens Levis Jeans-071</div>
+                    <div class="description fade">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                         printer took a galley of type and scrambled it to make a type specimen book. It has survived not
                         only five centuries, but also the leap into electronic typesetting, remaining essentially
@@ -165,7 +173,7 @@
                     </div>
                 </div>
 
-                <div class="itemPicture">
+                <div class="itemPicture fade">
                     <img src="./img/itemBig.png"/>
                 </div>
 
