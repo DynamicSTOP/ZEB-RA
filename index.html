@@ -31,17 +31,22 @@
             $('.spinning .item').click(function () {
                 $(".spinning .item.selected").removeClass("selected");
                 $(this).addClass("selected");
-                $(".levis .fade").fadeOut();
-                $(".levis .itemInfo .price span").fadeOut({
-                    complete: function () {
-                        $(".levis .itemInfo .price span").html("$ " + prices[$(".levis .selected").data("index")].toFixed(2)).fadeIn();
-                    }
-                });
-                $(".levis .fade").fadeIn();
+                
+                if($(".levis .fade").css("opacity","1")){
+                    $(".levis .fade").fadeOut();
+                    $(".levis .itemInfo .price span").fadeOut({
+                        complete: function () {
+                            $(".levis .itemInfo .price span").html(
+                                    "$ " + prices[$(".levis .selected").data("index")].toFixed(2)
+                            );
+                        }
+                    });
+                }
+                $(".levis .fade,.levis .itemInfo .price span").fadeIn();
 
             });
 
-            $('.spinning .item:first-child').click();
+            $('.spinning .item[data-index="0"]').first().click();
         });
     </script>
 </head>
@@ -168,7 +173,7 @@
                         unchanged. It was popularised
                     </div>
                     <div class="bottom">
-                        <div class="price">Rate: <span>$ 61.99</span></div>
+                        <div class="price">Rate: <span>$ 5.03</span></div>
                         <div class="wcart"><img src="./img/cart_w.png">Add to cart</div>
                     </div>
                 </div>

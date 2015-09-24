@@ -652,6 +652,11 @@ div.submenu div div:first-child {
 .levis .spinning .item.selected .photo{
     border-color: #a50716;
 }
+
+.levis .fade,.levis .itemInfo .price span{
+    opacity: 1;
+}
+
 /* footer */
 
 .footer{
