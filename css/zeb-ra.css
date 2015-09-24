@@ -44,7 +44,7 @@ body > div {
     color: #626262;
 }
 
-div.header div.menu {
+.header div.menu {
     right: 130px;
     position: absolute;
     margin: 0;
@@ -52,7 +52,7 @@ div.header div.menu {
     vertical-align: middle;
 }
 
-div.menu > div {
+.menu > div {
     float: left;
     height: 86px;
     margin-right: 2px;
@@ -60,11 +60,11 @@ div.menu > div {
     font-size: 17px;
 }
 
-div.menu > div:last-child {
+.menu > div:last-child {
     margin-left: 95px;
 }
 
-div.submenu {
+.submenu {
     display: none;
     position: absolute;
     background-color: #cf1a2b;
@@ -629,11 +629,18 @@ div.submenu div div:first-child {
 }
 
 .levis .spinning .item{
+    padding: 5px;
+    border-radius: 3px;
+    border: 3px solid #58dbd3;
     display: inline-block;
     color:#616161;
     font-size:15px;
     text-align: center;
 }
+.levis .spinning .item:hover{
+    border-color: #a50716;
+}
+
 
 /* footer */
 
