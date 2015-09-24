@@ -155,15 +155,34 @@ div.submenu div div:first-child {
     left: 0;
 }
 
+/* slider */
 .zebra {
     width: 100%;
     height: 650px;
     margin: 0 auto;
-    background: url("../img/zebra.png") rgba(6, 181, 169, 0.3);
     position: relative;
+    overflow: hidden;
 }
 
-.zebra::before {
+.zebra > .slider,.zebra > .slider div{
+    height: 100%;
+}
+.zebra .slide div{
+    height: auto;
+}
+
+.zebra .slider .slide{
+    position: relative;
+    height:100%;
+}
+
+.slide .bg{
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.zebra .slide::before {
     background: rgba(6, 181, 169, 0.3);
     content: "";
     display: block;
@@ -173,12 +192,11 @@ div.submenu div div:first-child {
     top: 0;
     left: 0;
 }
-/* slider */
+
 .sliderLeft, .sliderRight {
     position: absolute;
     left: 50px;
     top: 50%;
-
 }
 
 .sliderRight {

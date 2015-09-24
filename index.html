@@ -1,36 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans|Roboto+Condensed:400|Raleway|Rajdhani:400,700|Josefin+Slab:100,300|Arimo:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans|Roboto+Condensed:400|Raleway|Rajdhani:400,700|Josefin+Slab:100,300|Arimo:700'
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
     <link type="text/css" rel="stylesheet" href="./css/zeb-ra.css">
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.zebra .slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                nextArrow:$(".sliderRight"),
+                prevArrow:$(".sliderLeft")
+            });
+        });
+    </script>
 </head>
 <body>
 <div>
     <div>
         <div class="zebra">
-            <div class="sliderLeft"><img src="./img/left-slider.png"/></div>
-            <div class="sliderRight"><img src="./img/right-slider.png"/></div>
-            <div class="middleText">
-                <div>
-                    <div class="small">
-                        <div>i</div>
-                        <div>n</div>
-                        <div>t</div>
-                        <div>r</div>
-                        <div>o</div>
-                        <div>d</div>
-                        <div>u</div>
-                        <div>c</div>
-                        <div>i</div>
-                        <div>n</div>
-                        <div>g</div>
+            <div class="slider">
+                <div class="slide">
+                    <div class="bg">
+                        <img src="./img/zebra.png">
                     </div>
-                    <div class="huge">
-                        <div>wild</div>
-                        <div>eyes</div>
+                    <div class="middleText">
+                        <div>
+                            <div class="small">
+                                <div>i</div>
+                                <div>n</div>
+                                <div>t</div>
+                                <div>r</div>
+                                <div>o</div>
+                                <div>d</div>
+                                <div>u</div>
+                                <div>c</div>
+                                <div>i</div>
+                                <div>n</div>
+                                <div>g</div>
+                            </div>
+                            <div class="huge">
+                                <div>wild</div>
+                                <div>eyes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="bg">
+                        <img src="./img/zebra.png">
                     </div>
                 </div>
             </div>
+
+            <div class="sliderLeft"><img src="./img/left-slider.png"/></div>
+            <div class="sliderRight"><img src="./img/right-slider.png"/></div>
         </div>
         <div class="cells">
             <div class="cell1">
